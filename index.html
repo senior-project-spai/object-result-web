@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Object Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="hero is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Object Detection Result</h1>
+                <div class="field has-addons">
+                    <div class="control is-expanded">
+                        <input id="api-text-input" class="input" type="text" placeholder="Find a repository">
+                    </div>
+                    <div class="control">
+                        <button id="get-button" class="button is-primary">GET</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section" id='result-section' style="display: none;">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h2 class="title is-2">Result</h2>
+                    <div class="field is-horizontal">
+                        <div class="field-label"><label class="label">ID</label></div>
+                        <div class="field-body">
+                            <div class="field" id='id-div'></div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label"><label class="label">Name</label></div>
+                        <div class="field-body">
+                            <div class="field" id='name-div'></div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label"><label class="label">Probability</label></div>
+                        <div class="field-body">
+                            <div class="field" id='probability-div'></div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label"><label class="label">Image Path</label></div>
+                        <div class="field-body">
+                            <div class="field" id='image-path-div'></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column has-text-centered">
+                    <img id='image-img' style="margin-top: 1em; max-width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
